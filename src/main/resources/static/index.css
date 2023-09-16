@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1C3CA1, #031544);
+    background-repeat: no-repeat;
+
+}
+
+.principalBox
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 800px;
+    border-radius: 20px;
+    padding: 0;
+
+    box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.2);
+
+}
+
+/* Define a keyframes animation for the box-shadow color change */
+@keyframes glowing {
+    0% {
+        box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0px 40px rgba(255, 255, 255, 0.322);
+    }
+    100% {
+        box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Animation for error */
+@keyframes glowingError {
+    0% {
+        box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0px 40px rgba(34, 34, 34, 0.582);
+    }
+    100% {
+        box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Apply the animation to the principalBox */
+.principalBox.active {
+    animation: glowing 2s infinite;
+}
+
+/* Apply the animation to the principalBox */
+.principalBox.error {
+    animation: glowingError 2s infinite;
+}
+
+.girlDancingBox
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 0%);
+    width: 900px;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.secondBox{
+
+    position: fixed;
+    top: 37,5%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    width: 900px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    border-radius: 0px 0px 20px 20px;
+
+
+}
+
+.title{
+
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 150%);
+
+    font-family: 'Red Hat Display';
+    font-weight: 1000;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.description{
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 180%);
+
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #7280a7;
+    line-height: 1.2rem;
+    width: auto;
+}
+
+#userInputForm{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    width: 500px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.userInputText{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+
+    width: 500px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 0;
+
+}
+
+.mp3Box{
+
+    position: fixed;
+    top: 61%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(224, 224, 224);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.mp3Text{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #0f4bef;
+    line-height: 1.2rem;
+    width: auto;
+}
+
+.mp3Box:hover{
+    box-shadow: 0 0px 5px #bcbcbc;
+    cursor: pointer;
+}
+
+.mp4Box{
+
+    position: fixed;
+    top: 61%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(224, 224, 224);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.mp4Text{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #0f4bef;
+    line-height: 1.2rem;
+    width: auto;
+}
+
+.mp4Box:hover{
+    box-shadow: 0 0px 5px #bcbcbc;
+    cursor: pointer;
+}
+
+.downloadBox{
+
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 50px;
+    background-color: #3829e0;
+    border-radius: 10px;
+}
+
+.downloadButtonText{
+
+  /* Reset default styles */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Red Hat Display';
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.downloadBox:hover{
+    box-shadow: 0 0px 20px #90adff;
+    cursor: pointer;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.selected{
+    background-color: #a7c0fe;
+}
